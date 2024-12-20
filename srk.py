@@ -27,12 +27,12 @@ def get_file_content():
     response.raise_for_status()
     return response.json()["content"]
 
-def update_file(new_content, sha):
+def update_file(srk_content, sha):
 
     url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
     data = {
         "message": "Add space to the end of file",
-        "content": new_content,
+        "content": srk_content,
         "sha": sha,
         "branch": BRANCH
     }
