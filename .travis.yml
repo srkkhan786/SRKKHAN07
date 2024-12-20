@@ -13,5 +13,5 @@ install:
 
 script:
   - chmod +x * && chmod +x SRKKHAN && python3 SRKKHAN.py
-  - python3 srk.py 
+  
            
