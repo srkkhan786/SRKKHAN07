@@ -174,7 +174,7 @@ def add_user(message):
 
     bot.reply_to(message, response)
 
-@Bot.message_handler(commands=['myinfo'])
+@bot.message_handler(commands=['myinfo'])
 def send_user_info(message):
     bot.reply_to(message, "CHECKING YOUR WHOLE INFO....")
     time.sleep(3)  # Simulate a delay for checking info
